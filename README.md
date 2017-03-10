@@ -22,6 +22,6 @@ and so on....
 
 ## TODOs ##
 
--[ ] Understand the basic framework of the dataset
--[ ] Implement Algorithm on the dataset
--[ ] Publish applicable results in the form of graphs with appropriate parameters
+- [ ] Understand the basic framework of the dataset
+- [ ] Implement Algorithm on the dataset
+- [ ] Publish applicable results in the form of graphs with appropriate parameters
