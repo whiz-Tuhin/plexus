@@ -67,6 +67,7 @@ int main( ){
 
   cout<<"Enter the value for limit :=";
   cin>>limit;
+  cout<<"Enter the number of nodes in the graph := ";
   cin>>v;
   create_graph();
   int temp = 0;
@@ -77,7 +78,7 @@ int main( ){
         cin>>v1>>v2;
         add_edge(v1,v2);
 
-        cout<<"Quit??"<<endl;
+        cout<<"Quit?? (y/n)"<<endl;
         cin>>ch;
         if(ch == 'y'){
           break;
