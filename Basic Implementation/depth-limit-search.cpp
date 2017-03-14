@@ -58,6 +58,7 @@ void dfs(int vertex,int count){
                                 dfs((adj_list[vertex])[i],count+1);
                           }
                           else{
+                            stack.pop_back();
                             return;
                           }
                 }
@@ -89,9 +90,6 @@ int main( ){
   }
   cout<<"Enter the vertex from which you wanna start the dfs := ";
 
-  for (int i = 0;i < v;i++){
-
-  }
   int v0;
   cin>>v0;
   dfs(v0,1);
