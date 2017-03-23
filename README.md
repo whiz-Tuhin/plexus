@@ -25,3 +25,4 @@ and so on....
 - [ ] Understand the basic framework of the dataset
 - [ ] Implement Algorithm on the dataset
 - [ ] Publish applicable results in the form of graphs with appropriate parameters
+- [ ] Development of a proper UI showing traversal of each node with the progress of the algorithm 
