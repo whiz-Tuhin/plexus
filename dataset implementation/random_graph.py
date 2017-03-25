@@ -16,19 +16,19 @@ for node_iterator in tqdm(variables.G1.Nodes(),ascii = False,desc = "Ego-Network
     random_name = names.get_full_name()
     index = node_iterator.GetId()
     variables.h_map[index] = random_name
-    #print "node = %d name = %s" % (index,variables.h_map[index])
-#
-# print '\n'
-# print "====================================="
-# print '\n'
-# print "====================================="
-# print '\n'
-#
-# for node_iterator in variables.G1.Nodes() :
-#     index = node_iterator.GetId()
-#     print "node =  %d   name = %s" % (index,variables.h_map[index])
-#     for edge_iterator in node_iterator.GetOutEdges() :
-#         print " ----> %s" % (variables.h_map[edge_iterator])
+    print "node = %d name = %s" % (index,variables.h_map[index])
+
+print '\n'
+print "====================================="
+print '\n'
+print "====================================="
+print '\n'
+
+for node_iterator in variables.G1.Nodes() :
+    index = node_iterator.GetId()
+    print "node =  %d   name = %s" % (index,variables.h_map[index])
+    for edge_iterator in node_iterator.GetOutEdges() :
+        print " ----> %s" % (variables.h_map[edge_iterator])
 print '\n'
 print "Random Ego Network Generated!"
 print '\n'
