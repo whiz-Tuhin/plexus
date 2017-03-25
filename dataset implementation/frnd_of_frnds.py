@@ -36,8 +36,13 @@ def depth_limit_search(vertex_id,vertex_id2,count) :
             if (not (variables.h_map[edge_iterator] in stack)):
                 print "Alters -----> %s at depth == %d" %(variables.h_map[edge_iterator],count)
                 if variables.h_map[edge_iterator] == variables.h_map[vertex_id2] :
-                    print "Found"
-                    exit()
+                    print '\n' + "%s is an indirect connection of %s" %(variables.h_map[vertex_id],variables.h_map[vertex_id2])
+                    return
+
+                elif edge_iterator == vertex_id :
+                    print '\n' + "%s is an not indirect connection of %s" %(variables.h_map[vertex_id],variables.h_map[vertex_id2])
+                    return
+
                 stack.append(variables.h_map[edge_iterator])
 
                 if count < limit:
@@ -50,16 +55,24 @@ def depth_limit_search(vertex_id,vertex_id2,count) :
 
 
 if __name__ == "__main__":
-    limit = int(raw_input("Enter the limit for the Depth Limit Search Algorithm ==> "))
-    vertex_id = int(raw_input("Enter Initial Vertex Id (0 <= id <= %d ) ==>" %(variables.vertices - 1)))
-    vertex_id2 = int(raw_input("Enter Search Vertex Id (0 <= id <= %d ) ==>" %(variables.vertices - 1)))
-    if not( vertex_id in range(0,variables.vertices)):
-        print '\n'
-        print "Error: vertex-id outside boundary conditions"
-        print '\n'
-        exit()
+
+    while(1) :
+        limit = int(raw_input("Enter the limit for the Depth Limit Search Algorithm ==> "))
+        vertex_id = int(raw_input("Enter Initial Vertex Id (0 <= id <= %d ) ==>" %(variables.vertices - 1)))
+        vertex_id2 = int(raw_input("Enter Search Vertex Id (0 <= id <= %d ) ==>" %(variables.vertices - 1)))
+        if not( vertex_id in range(0,variables.vertices)):
+            print '\n'
+            print "Error: vertex-id outside boundary conditions"
+            print '\n'
+            exit()
 
 
+        print '\n','\n'
+        print "Person 1 : %s" %(variables.h_map[vertex_id])
+        print "Person 2 : %s" %(variables.h_map[vertex_id2])
 
-    depth_limit_search(vertex_id,vertex_id2,0)
-    print "count of nodes visited = %d" %(temp_count)
+        depth_limit_search(vertex_id,vertex_id2,0)
+        print "count of nodes visited = %d" %(temp_count)
+
+
+        print '\n','\n'
