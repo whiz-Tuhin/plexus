@@ -1,22 +1,22 @@
 # Plexus #
 
-## Purpose of Project ##
-Application of Depth Limit Search Algorithm on Facebook Friend Connection dataset.
-
+## Project Description ##
+Project mainly results in finding indirect composite relations for a particular node in an ego network.
+This particular project mainly focuses on **Friend** relation and finds and indirect friendship relation between several egos in an ego network.
 
 ## Result ##
 Upon the action of the algorithm on the dataset the user will be able to find friend connections up-to a limit (l)
 
 For instance,
 
-if l = 2
+** if l = 1 **
+   **Result** => Direct Friends (1st Connection)
 
-  Result => Friends of Friends
-
-
-if l = 3
-
-  Result => Friends of Friends of Friends
+**if l = 2**
+  **Result** => Friends of Friends (2nd Connections
+  
+**if l = 3**
+  **Result** => Friends of Friends of Friends
 
 and so on....
 
