@@ -9,16 +9,13 @@ Upon the action of the algorithm on the dataset the user will be able to find fr
 
 For instance,
 
-** if l = 1 **
-  **Result** => Direct Friends (1st Connection)
+**if l = 1   |=  Result => Direct Friends (1st Connection)**
 
-**if l = 2**
-  **Result** => Friends of Friends (2nd Connections
+**if l = 2   |=  Result => Friend of Friends (2nd Connection)**
   
-**if l = 3**
-  **Result** => Friends of Friends of Friends
+**if l = 3   |=  Result => Friend of Friend of Friends (3rd Connection)**
 
-and so on....
+** and so on....**
 
 ## TODOs ##
 
