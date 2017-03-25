@@ -3,19 +3,16 @@
 #include <vector>
 #include <map>
 #include <cstdlib>
-
 using namespace std;
 
 int limit;
 int v;
-// vector<int> adj_list[100];
 vector<int> *adj_list;
 vector<int> stack;
 
 void create_graph(){
     adj_list = (vector<int> *)malloc(sizeof(vector<int>)*v);
 }
-
 int find(int k){
 
         if(stack.size() == 0){
@@ -29,7 +26,6 @@ int find(int k){
                           break;
                     }
         }
-
         if(flag){
           return 1;
         }
@@ -41,7 +37,6 @@ int find(int k){
 void add_edge(int v1,int v2){
        adj_list[v1].push_back(v2);
 }
-
 void dfs(int vertex,int count){
 
         int j;
@@ -94,5 +89,6 @@ int main( ){
   cin>>v0;
   dfs(v0,1);
 
+  cout<<endl;
   return 0;
 }
