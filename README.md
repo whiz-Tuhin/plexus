@@ -13,9 +13,9 @@ For instance,
 
 **if l = 2   |=  Result => Friend of Friends (2nd Connection)**
   
-**if l = 3   |=  Result => Friend of Friend of Friends (3rd Connection)**
+**if l = 3   |=  Result => Friend of Friend of Friends (3rd Connection)**   **and so on......**
 
-** and so on....**
+
 
 ## TODOs ##
 
