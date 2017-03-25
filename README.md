@@ -5,15 +5,15 @@ Project mainly results in finding indirect composite relations for a particular 
 This particular project mainly focuses on **Friend** relation and finds and indirect friendship relation between several egos in an ego network.
 
 ## Result ##
-Upon the action of the algorithm on the dataset the user will be able to find friend connections up-to a limit (l)
+Upon the action of the algorithm on the dataset the user will be able to find friend connections up-to a limit (L)
 
 For instance,
 
-**if l = 1   |=  Result => Direct Friends (1st Connection)**
+**if L = 1   |=  Result => Direct Friends (1st Connection)**
 
-**if l = 2   |=  Result => Friend of Friends (2nd Connection)**
+**if L = 2   |=  Result => Friend of Friends (2nd Connection)**
   
-**if l = 3   |=  Result => Friend of Friend of Friends (3rd Connection)**   **and so on......**
+**if L = 3   |=  Result => Friend of Friend of Friends (3rd Connection)**   **and so on......**
 
 
 
