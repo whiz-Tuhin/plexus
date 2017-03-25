@@ -10,7 +10,7 @@ Upon the action of the algorithm on the dataset the user will be able to find fr
 For instance,
 
 ** if l = 1 **
-   **Result** => Direct Friends (1st Connection)
+  **Result** => Direct Friends (1st Connection)
 
 **if l = 2**
   **Result** => Friends of Friends (2nd Connections
